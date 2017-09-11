@@ -153,10 +153,10 @@ contract StandardToken is ERC20, BasicToken {
  * Note they can later distribute these tokens as they wish using `transfer` and other
  * `StandardToken` functions.
  */
-contract INDIToken is StandardToken {
+contract KapilToken is StandardToken {
 
-  string public constant name = "Indicoin Token";
-  string public constant symbol = "INDI";
+  string public constant name = "Kapil Token";
+  string public constant symbol = "KAPI";
   uint256 public constant decimals = 18;
 
   uint256 public constant INITIAL_SUPPLY = 1000000000 * 10**18;
@@ -164,7 +164,7 @@ contract INDIToken is StandardToken {
   /**
    * @dev Contructor that gives msg.sender all of existing tokens.
    */
-  function INDIToken() {
+  function KapilToken() {
     totalSupply = INITIAL_SUPPLY;
     balances[msg.sender] = INITIAL_SUPPLY;
   }
