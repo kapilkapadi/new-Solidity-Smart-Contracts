@@ -62,16 +62,16 @@ interface Token {
   function balanceOf(address _owner) constant returns (uint256 balance);
 }
 
-contract PreICO is Ownable {
+contract ICO is Ownable {
 
   using SafeMath for uint256;
 
   Token token;
 
   uint256 public constant RATE = 12500; // Number of tokens per Ether
-  uint256 public constant CAP = 1000; // Cap in Ether
+  uint256 public constant CAP = 50000; // Cap in Ether
   uint256 public constant START = ; // Sep 20, 2017 @ 00:00 IST
-  uint256 public constant DAYS = 30; // 30 Days
+  uint256 public constant DAYS = 50; // 50 Days
   
   uint256 public constant initialTokens = 380000000 * 10**18; // Initial number of tokens available
   bool public initialized = true;
